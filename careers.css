@@ -1,0 +1,263 @@
+:root{
+     --clr-yellow: #FCB72B;
+     --clr-dark-navy: #495567;
+     --clr-dim-grey: #939CAA;
+     --clr-light-grey: #E5ECF4;
+     --clr-snow: #F2F5F9;
+     --clr-light-yellow: #FFF4DF;
+
+     --h1-56: 5.6rem;
+     --h2-48: 4.8rem;
+     --h3-40: 4rem;
+     --h4-24: 2.4rem;
+     
+     --body-15: 1.5rem;
+     --body-18: 1.8rem;
+}
+
+.title h3{
+    padding: 6rem 10.7rem;
+}
+
+/* join */
+#join{
+    margin-top: 7.2rem;
+    margin-bottom: 12rem;
+}
+
+.join-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5.6rem;
+    text-align: center;
+}
+
+.join-text h2{
+    margin-bottom: 3.2rem;
+}
+
+.join-text p{
+    width: 31.1rem;
+    margin: 0 auto;
+    margin-bottom: 4.6rem;
+}
+
+.join-text .page-btn{
+    padding: 1.4rem 4.85rem;
+}
+
+.hide+img, .hide+img+img{
+    display: none;
+}
+
+/* jobs */
+
+#jobs{
+    margin-bottom: 12rem;
+}
+
+.job-col{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-card{
+    background: var(--clr-snow);
+    padding: 3.6rem 3.2rem 3.2rem;
+    text-align: center;
+    width: 100%;
+    min-width: 311px;
+    position: relative;
+}
+
+.job-card h5{
+    font-size: var(--body-18);
+    line-height: 24px ;
+    letter-spacing: -0.8px ;
+    color: var(--clr-dark-navy) ;
+    margin-bottom: 0.4rem;
+}
+
+.job-card p{
+    color: var(--clr-dark-navy);
+    margin-bottom: 3rem;
+}
+
+.job-card a{
+    background-color: var(--clr-yellow);
+    color: white;
+    padding: 1.4rem 10rem 1.4rem 10.1rem;
+    transition: .1s !important;
+}
+
+.apply-btn:hover{
+    border: 1.5px solid var(--clr-yellow) !important;
+    background: none;
+    color: var(--clr-yellow);
+}
+
+@media(min-width:500px){
+    .join-text p{
+        width: fit-content;
+        padding: 0 6.4rem;
+    }
+}
+
+@media(min-width:768px){
+    .container:not(:has(.job-col)){
+        padding: 0 9.75rem;
+    }
+
+    #join{
+        margin-top: 14.4rem;
+    }
+
+    .join-row{
+        gap: 6.4rem;
+    }
+
+    .hide+img{
+        display: block;
+    }
+    
+    .hide{
+        display: none;
+    }
+
+    .join-text h2{
+        margin-bottom: 4rem;
+    }
+
+    .join-text p{
+        padding: 0;
+    }
+
+    .container:has(.job-col){
+        padding: 0 39.5px;
+    }
+
+    .job-card{
+        display: flex;
+        align-items: center;
+        padding: 3.4rem 0rem 3.3rem 4.8rem;
+        text-align: left;
+    }
+
+   /*  .job-card:first-child{
+        gap: 20.8rem;
+    }
+
+    .job-card:nth-child(2){
+        gap: 22.2rem;
+    }
+    .job-card:nth-child(3){
+        gap: 9.9rem;
+    }
+    .job-card:nth-child(4) ,.job-card:nth-child(5){
+        gap: 19.5rem;
+    }
+
+    .job-card:last-child{
+        gap: 23.1rem;
+    } */
+
+    .job-card a{
+        position: absolute;
+        right: 48px;
+        padding: 1.4rem 6.7rem;
+        border: none !important;
+    }
+
+    .job-card h5{
+        font-size: var(--h4-24);
+        line-height: 28px;
+        letter-spacing: -1.07px;
+        margin-bottom: .8rem;
+    }
+
+    .job-card p{
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width:1057px){
+    .join-text p{
+        padding: 0 20rem;
+    }
+
+    .container:has(.job-col){
+        padding: 0 10rem;
+    }
+}
+
+@media (min-width:1440px){
+    .container{
+        padding: 0 0 0 16.5rem;
+    }
+
+    #join{
+        margin-top: 12rem;
+    }
+
+    .join-row{
+        flex-direction: row;
+        gap: 9.5rem;
+        text-align: start;
+    }
+
+    .hide+img{
+        display: none;
+    }
+
+    .hide+img+img{
+        display: block;
+        order: 1;
+    }
+
+    .join-text h2{
+        margin-bottom: 2.4rem;
+    }
+
+    .join-text p{
+        padding: 0;
+        margin-bottom: 5.4rem;
+    }
+
+    .container:has(.job-col){
+        padding: 0 16.5rem;
+    }
+
+    #jobs{
+        margin-bottom: 16rem;
+    }
+
+    .job-col{
+        gap: 2.4rem;
+    }
+
+    .job-card{
+        padding: 3.2rem 0 3.5rem 4rem;
+    }
+
+    .job-card a{
+        right: 64px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
